@@ -38,7 +38,7 @@
             var ori = window.document.querySelector ('div#ori')
             var cor = (res.value)
             ori.innerHTML = `<p> Sua resposta foi ${cor}`
-                if (cor == "Sim") {
+                if (cor.toUpperCase() == "SIM") {
             ori.innerHTML = '<p> Correta Respota! é meu mesmo. &#128154; </p>'}
             else { 
             ori.innerHTML += 'Você está <strong>DOIDA?</strong> é meu sim! Volta tudo e faz de novo!'}
