@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body{
+   background-image: linear-gradient(to bottom, rgba(52, 52, 219, 0.816), rgba(210, 153, 46, 0.985));
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+header{
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.462);
+
+}
+footer{
+    text-align: center;
+    font-style: italic;
+
+}
