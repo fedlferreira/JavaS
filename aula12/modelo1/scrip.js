@@ -6,8 +6,8 @@ function carregar() {
     var play2 = window.document.getElementById('vid2')
     var play3 = window.document.getElementById('vid3')
     var data = new Date()
-    var hora = 19//data.getHours()
-    var min = 15//data.getMinutes() 
+    var hora = data.getHours()
+    var min = data.getMinutes() 
     per.innerHTML = `Agora são ${hora} Horas e ${min} Minutos`
     if (hora >= 0 && hora < 12) {
         msg.innerHTML = 'Bom dia, Princesa! por favor sente';
