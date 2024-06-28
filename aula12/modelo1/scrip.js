@@ -4,7 +4,8 @@ function carregar() {
     var img = window.document.getElementById('imagem');
     var data = new Date()
     var hora = data.getHours()
-    per.innerHTML = `Agora são ${hora}`
+    var min = data.getMinutes() 
+    per.innerHTML = `Agora são ${hora} Horas e ${min} Minutos`
     if (hora >= 0 && hora < 12) {
         msg.innerHTML = 'Bom dia, Princesa! por favor sente';
         img.src = 'imagem/glock.png';} 
