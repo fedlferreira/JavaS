@@ -6,8 +6,8 @@ html, body {
 }
 body{
    background-image: linear-gradient(to bottom, rgba(52, 52, 219, 0.816), rgba(210, 153, 46, 0.985));
-   background-size: cover;
-   background-repeat: no-repeat;
+   background-size: contain;
+   background-repeat: repeat;
 }
 header {
     text-align: center;
@@ -17,7 +17,7 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 300px;
+    width: 320px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.462);
 
@@ -41,6 +41,15 @@ section {
     justify-content: center;
     align-items: center;
     }
+#video { 
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+    
 footer{
     text-align: center;
     font-style: italic;
