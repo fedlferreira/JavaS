@@ -8,25 +8,20 @@
 </head>
 <body onload="carregar()">
     <header >
-        <h1 id="periodo">ex</h1> 
+        <h1 id="periodo">Vamos contar</h1> 
     </header>
+
     <section>
-        <div id="msg">
-            ex
-        </div>
-        <div class="imagem-container">
-            <img id="imagem" src="imagem/glock.png" alt="imagem glock">
-        </div>
-        <div>
-            <iframe id="vid" width="320" height="240"
-             src="https://www.youtube.com/embed/63SMENrtLlk?si=hwEousFSD7waM6R6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-        </div>
-        <div>
-            <iframe id="vid2" controls  width="320" height="240" src="https://www.youtube.com/embed/jRaSxqcAtlc?si=n_gPfVSMEa6TGvZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div>
-            <iframe id="vid3" width="320" height="240" src="https://www.youtube.com/embed/W5lIX-Yaq94?si=27RdwnTB5iGmjD2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+    <div id="dados">
+        <p>Início <input type="number" name="inicio" id="txti"></p>
+        <p>Fim <input type="number" name="fim" id="txtf"></p>
+        <p>Passo <input type="number" name="Passo" id="txtp"></p>
+        <p><input type="button" value="Contar" onclick="contar()"></p>
+    </div>
+    <div id="res">
+        Preparando contagem
+    </div>
+
     </section>
     <footer>
         <p>ex12 Felipe</p>

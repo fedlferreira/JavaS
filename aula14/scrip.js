@@ -1,38 +1,22 @@
-function carregar() {
-    var per = window.document.getElementById('periodo');
-    var msg = window.document.getElementById('msg');
-    var img = window.document.getElementById('imagem');
-    var play = window.document.getElementById('vid')
-    var play2 = window.document.getElementById('vid2')
-    var play3 = window.document.getElementById('vid3')
-    var data = new Date()
-    var hora = data.getHours()
-    var min = data.getMinutes() 
-    per.innerHTML = `Agora são ${hora} Horas e ${min} Minutos`
-    if (hora >= 0 && hora < 12) {
-        msg.innerHTML = 'Bom dia, Princesa! por favor sente';
-        img.src = 'imagem/glock.png';
-        play.style.display = "block"
-        play2.style.display = "none";
-        play3.style.display = "none";} 
-        else if (hora >= 12 && hora < 18){
-        msg.innerHTML = 'Indicação para você <br> Love in the Afternoon - Legiao Urbana';
-        img.src = 'imagem/boatarde.png';
-        document.body.style.background = 'rgba(210, 153, 46, 0.985)'; 
-        play.style.display = "none"
-        play2.style.display = "block";
-        play3.style.display = "none";
-    }
-        else {
-        msg.innerHTML = 'Indicação pra você <br> Boa noite - Sorriso Maroto';
-        img.src = 'imagem/boanoite.jfif';
-        document.body.style.background = 'rgba(52, 52, 219, 0.816)';
-        play.style.display = "none"
-        play2.style.display = "none";
-        play3.style.display = "block"; 
-    }
+function contar() {
+    var ini = window.document.getElementById('txti');
+    var fim = window.document.getElementById('txtf');
+    var passo = window.document.getElementById('txtp');
+    var res = window.document.getElementById('res')
 
-    }
-    
-    
-
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {window.alert('Erro! Faltam dados')
+    } else { res.innerHTML = "Contando:<br>"
+    let i = Number(ini.value)
+    let f = Number(fim.value)
+    let p = Number(passo.value)
+        if ( i < f)
+            {for(let c = i; c <= f; c = c += p )
+            res.innerHTML +=` \uD83D\uDC49 ${c} `
+        } else {
+            for(let c = i; c >= f; c = c -= p )
+            res.innerHTML +=` \uD83D\uDC49 ${c} `
+        }
+        
+}
+   
+}
